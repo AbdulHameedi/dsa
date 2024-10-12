@@ -1,18 +1,8 @@
-// let firstSequence = [0,1]
-
-// function fibonacci(){
-
-//     // for(let i=firstSequence; i<firstSequence.length; i++){
-
-//     // }
-// } 
-
-
-// fibonacci(2)
-
-const cars = ['Volvo', 'Suzuki', 'Camry', 'Keke']
-let text = ''
-for(let i=0;i<cars.length;i++){
-    text =+ cars[i] + "<br/>"
+let fib = [0,1]
+function fibFunc(n){
+    for(let i=2;i<n;i++){
+        fib[i] = fib[i-1] + fib[i-2]
+    }
+    return fib
 }
-console.log(text)
+console.log(fibFunc(4))
